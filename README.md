@@ -1,12 +1,124 @@
-# React + Vite
+# ⌨️ Typrac - Typing Speed Test App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Typrac is a web-based typing speed test application built with **React**. It calculates your **Words Per Minute (WPM)**, **accuracy**, and tracks your typing progress in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📝 Real-time typing test
+- 📊 WPM (Words Per Minute) calculation
+- 🎯 Accuracy tracking
+- ⏱️ Duration counter
+- 🔄 Fully responsive UI
+- 💻 Built with React + Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📷 Preview
+
+![Screenshot of Typrac](./screenshot.png)
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ganeshbelote/Typract.git
+cd Typract/client
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` in your browser.
+
+---
+
+## 🧠 How It Works
+
+* The app displays a long static paragraph.
+
+* You type in the hidden input field.
+
+* It compares each typed character to the target character.
+
+* WPM is calculated as:
+  $`wordCount / duration * 60`$
+
+* Accuracy is calculated as:
+  $`correctChars / totalChars * 100`$
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how:
+
+1. **Fork** the repository.
+2. **Create a new branch** for your feature/bugfix:
+
+   ```bash
+   git checkout -b your-feature-name
+   ```
+3. **Commit** your changes:
+
+   ```bash
+   git commit -m "Add your message"
+   ```
+4. **Push** to your fork:
+
+   ```bash
+   git push origin your-feature-name
+   ```
+5. **Create a Pull Request** from GitHub.
+
+---
+
+## 📂 Folder Structure
+
+```
+client/
+├── assets/
+├── components/
+│   ├── Display.jsx
+│   ├── Result.jsx
+├── App.jsx
+├── main.jsx
+├── index.css
+```
+
+---
+
+## 📄 License
+
+This project is open source under the [MIT License](./LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+* [Ganesh Belote](https://github.com/ganeshbelote)
+
+```
+
+---
+
+Let me know if you want to include:
+
+- A contributors section
+- A backend setup
+- Demo GIF
+- Deployment instructions (e.g. Netlify, Vercel)
+```
