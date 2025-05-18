@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body{
+ font-family: cursive;
+ background-color: #323437;
+ overflow: hidden;
+}

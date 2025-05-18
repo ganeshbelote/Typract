@@ -1,0 +1,19 @@
+.correct{
+  color: #f3f4f6;
+}
+
+.incorrect{
+  color: rgb(195, 88, 88);
+}
+
+.current {
+  border-left: 2px solid yellow;
+  animation: blink 1s steps(1) infinite;
+}
+
+/* blinking caret effect */
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: yellow; }
+  100% { border-color: transparent; }
+}
