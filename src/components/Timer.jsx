@@ -26,7 +26,9 @@ const Timer = ({second, setSecond, setDuration}) => {
   }, [isRunning, second])
 
   useEffect(() => {
-    const handleKeyDown = () => {
+    const handleKeyDown = (e) => {
+      if(e.key == 'Enter' || e.key == 'Backspace' || e.key == 'Shift' || e.key == 'Tab' || e.key == 'Control') return
+      
       if(!firstTypeTime){
         setDuration(second)
         firstTypeTime = 1
@@ -55,7 +57,7 @@ const Timer = ({second, setSecond, setDuration}) => {
         title='Click to change duration'
         className={`${
           secOpt ? 'rounded-l-2xl ' : 'rounded-2xl'
-        } transition duration-500 ease-in-out absolute z-10 bg-[#323437] p-2 h-12 w-36 shadow-[#303030] shadow-lg border-[1.5px] border-amber-200 flex items-center justify-center text-2xl cursor-pointer`}
+        } transition duration-500 ease-in-out absolute z-10 p-2 h-12 w-36 shadow-[#303030] shadow-lg border-[1.5px] border-amber-200 flex items-center justify-center text-2xl cursor-pointer`}
         onClick={handleSetSecondOptions}
       >
         {second}

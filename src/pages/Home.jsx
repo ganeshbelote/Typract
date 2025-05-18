@@ -21,7 +21,7 @@ const Home = () => {
   }
 
   return (
-    <div className='h-full w-screen'>
+    <div className='h-full w-screen bg-[url("/TypractBg.png")] bg-cover bg-center'>
       <Navbar setSample={setSample}/>
       <div className='wrapper mt-24 flex flex-col items-center justify-center gap-5'>
         {second ? (

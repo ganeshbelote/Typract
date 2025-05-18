@@ -89,7 +89,7 @@ const Display = ({
       </div>
       <div
         title='Reload'
-        className={`z-10 bg-[#323437] p-2 h-12 w-36 shadow-[#303030] shadow-lg border-[1.5px] border-amber-200 flex items-center justify-center cursor-pointer rounded-2xl`}
+        className={`z-10 p-2 h-12 w-36 shadow-[#303030] shadow-lg border-[1.5px] border-amber-200 flex items-center justify-center cursor-pointer rounded-2xl`}
         onClick={() => setSample(data[Math.floor(Math.random() * data.length)])}
       >
         <img className='h-5' src={keyboard} alt='keyboard' />
