@@ -18,8 +18,8 @@ const Navbar = ({setSample}) => {
       <nav className='settings ml-6 lg:ml-8 flex gap-5 lg:gap-8 text-zinc-300'>
         {/* <img className='cursor-pointer h-5' src={user} alt='user logo' />
         <img className='cursor-pointer h-5' src={setting} alt='setting logo' /> */}
-        <img className='cursor-pointer h-6' src={git} alt='git logo' onClick={()=>window.location.href ='https://github.com/ganeshbelote/Typract'}/>
-        <img className='cursor-pointer h-5' src={keyboard} alt='keyboard logo' onClick={()=>setSample(data[Math.floor(Math.random() * data.length)])}/>
+        <img title='github' className='cursor-pointer h-6' src={git} alt='git logo' onClick={()=>window.location.href ='https://github.com/ganeshbelote/Typract'}/>
+        <img title='Reload tab' className='cursor-pointer h-5' src={keyboard} alt='keyboard logo' onClick={()=>setSample(data[Math.floor(Math.random() * data.length)])}/>
       </nav>
     </header>
   )

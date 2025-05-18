@@ -3,7 +3,13 @@ import './Display.css'
 import keyboard from '../assets/keyboard.svg'
 import data from '../data/data.js'
 
-const Display = ({ setWordCount, setcorrectChars, settotalChars, sample, setSample }) => {
+const Display = ({
+  setWordCount,
+  setcorrectChars,
+  settotalChars,
+  sample,
+  setSample
+}) => {
   const [input, setInput] = useState('')
   const inputRef = useRef()
 
@@ -82,6 +88,7 @@ const Display = ({ setWordCount, setcorrectChars, settotalChars, sample, setSamp
         />
       </div>
       <div
+        title='Reload'
         className={`z-10 bg-[#323437] p-2 h-12 w-36 shadow-[#303030] shadow-lg border-[1.5px] border-amber-200 flex items-center justify-center cursor-pointer rounded-2xl`}
         onClick={() => setSample(data[Math.floor(Math.random() * data.length)])}
       >
